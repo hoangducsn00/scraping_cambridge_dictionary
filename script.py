@@ -1,15 +1,7 @@
 from typing import List
 from bs4 import BeautifulSoup
 from requests import get
-
-
-def isValidWord(user_input: str) -> bool:
-    try:
-        user_input = int(user_input)
-        return False
-    except ValueError:
-        return True
-
+from functions.validate_input import isValidWord
 
 word = input('Enter the word you\'re looking for:\n')
 
